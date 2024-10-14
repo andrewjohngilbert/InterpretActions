@@ -14,23 +14,23 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Long-term videos pose additional difficulty due to the complexity and diversity of actions, exacerbating interpretability challenges. While query-based transformer networks offer promising long-term modelling capabilities, their interpretability in AQA remains unsatisfactory due to a phenomenon we term \problemName, where the model skips self-attention layers to prevent output degradation. To address this, we propose an attention loss function and a query initialization method to enhance performance and interpretability. Additionally, we introduce a weight-score regression module designed to approximate the scoring patterns observed in human judgments and replace conventional single-score regression, improving the rationality of interpretability.">
+  <meta name="description" content="We investigate a human-like interpretable model of video understanding. Humans recognise complex activities in video by recognising critical spatio-temporal relations among explicitly recognised objects and parts, for example, an object entering the aperture of a container. To mimic this we build on a model which uses positions of objects and hands, and their motions, to recognise the activity taking place. To improve this model we focussed on three of the most confused classes (for this model)  and identified that the lack of 3D information was the major problem.">
   <meta property="og:title" content="Interpretable Action Recognition on Hard to Classify Actions"/>
-  <meta property="og:description" content="Long-term videos pose additional difficulty due to the complexity and diversity of actions, exacerbating interpretability challenges. While query-based transformer networks offer promising long-term modelling capabilities, their interpretability in AQA remains unsatisfactory due to a phenomenon we term \problemName, where the model skips self-attention layers to prevent output degradation. To address this, we propose an attention loss function and a query initialization method to enhance performance and interpretability. Additionally, we introduce a weight-score regression module designed to approximate the scoring patterns observed in human judgments and replace conventional single-score regression, improving the rationality of interpretability."/>
-  <meta property="og:url" content="https://andrewjohngilbert.github.io/InterpretAQA/"/>
+  <meta property="og:description" content="We investigate a human-like interpretable model of video understanding. Humans recognise complex activities in video by recognising critical spatio-temporal relations among explicitly recognised objects and parts, for example, an object entering the aperture of a container. To mimic this we build on a model which uses positions of objects and hands, and their motions, to recognise the activity taking place. To improve this model we focussed on three of the most confused classes (for this model)  and identified that the lack of 3D information was the major problem."/>
+  <meta property="og:url" content="https://andrewjohngilbert.github.io/InterpretActions/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="assets/IntrpretAQATeaser.png" />
+  <meta property="og:image" content="assets/InterpretActions_Teaser.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
   <meta name="twitter:title" content="Interpretable Action Recognition on Hard to Classify Actions">
-  <meta name="twitter:description" content="Long-term videos pose additional difficulty due to the complexity and diversity of actions, exacerbating interpretability challenges. While query-based transformer networks offer promising long-term modelling capabilities, their interpretability in AQA remains unsatisfactory due to a phenomenon we term \problemName, where the model skips self-attention layers to prevent output degradation. To address this, we propose an attention loss function and a query initialization method to enhance performance and interpretability. Additionally, we introduce a weight-score regression module designed to approximate the scoring patterns observed in human judgments and replace conventional single-score regression, improving the rationality of interpretability.">
+  <meta name="twitter:description" content="We investigate a human-like interpretable model of video understanding. Humans recognise complex activities in video by recognising critical spatio-temporal relations among explicitly recognised objects and parts, for example, an object entering the aperture of a container. To mimic this we build on a model which uses positions of objects and hands, and their motions, to recognise the activity taking place. To improve this model we focussed on three of the most confused classes (for this model)  and identified that the lack of 3D information was the major problem.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="asserts/IntrpretAQATeaser.png">
+  <meta name="twitter:image" content="asserts/InterpretActions_Teaser.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="Machine Learning, Video Understanding,Human, andrew Gilbert, Xu Dong, Explainable AI, AQA, Action Quality Assessment">">
+  <meta name="keywords" content="Machine Learning, Depth, Video Understanding,Human, andrew Gilbert, Frank Guerin,">">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -66,26 +66,22 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://www.linkedin.com/in/xudong-442302166/" target="_blank">Xu Dong</a><sup>[1]</sup>,</span>
+                <a href="F" target="_blank">Anastasia Anichenko</a><sup></sup>,</span>
                 <span class="author-block">
-                  <a href="https://www.linkedin.com/in/xinran-liu-396a3b292/" target="_blank">Xinran Liu</a><sup>[1]</sup>,</span>
+                  <a href="https://www.surrey.ac.uk/people/frank-guerin" target="_blank">Frank Guerin</a><sup></sup>,</span>
                   <span class="author-block">
-                    <span class="author-block">
-                      <a href="https://scholars.uow.edu.au/wanqing-li" target="_blank">Wanqing Li</a><sup>[2]</sup>,</span>
-                      <span class="author-block">
-                        <a href="https://www.surrey.ac.uk/people/femi-adeyemi-ejeye" target="_blank">Anthony Adeyemi-Ejeye</a><sup>[1]</sup>,</span>                                          
-                    <a href="https://andrewjohngilbert.github.io/" target="_blank">Andrew Gilbert</a><sup>[1]</sup>,</span>
+                    <a href="https://andrewjohngilbert.github.io/" target="_blank">Andrew Gilbert</a><sup></sup>,</span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Unviersity of Surrey<sup>[1]</sup> Univesity of Wollongon <sup>[2]</sup><br> <a href="https://bmvc2024.org/" target="_blank">The 35th British Machine Vision Conference 2024</a>               
+                    <span class="author-block">Unviersity of Surrey<br> <a href="https://eccv2024.ecva.net/" target="_blank">The European Conference of Computer Vision 2024</a> <a href="https://sites.google.com/view/hcvworkshop2024" target="_blank">Human-inspired Computer Vision Workshop</a>              
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://andrewjohngilbert.github.io/InterpretAQA/assets/IntrpretAQActionPaper.pdf" target="_blank"
+                        <a href="https://andrewjohngilbert.github.io/InterpretActions/assets/InterpretActions_Paper.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -95,7 +91,6 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                     <!--
                    <span class="link-block">
                       <a href="assets/InterpretActions_Poster.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -105,11 +100,10 @@
                       <span>Poster</span>
                     </a>
                   </span>
--->
  
                   <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/dx199771/Interpretability-AQA" target="_blank"
+              <!--    <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -117,7 +111,7 @@
                     <span>Code</span>
                   </a>
                 </span>
-              
+              -->
 
                 
             </div>
@@ -133,9 +127,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="assets/IntrpretAQATeaser.png">
+      <img src="assets/InterpretActions_Teaser.png">
       <h2 class="subtitle has-text-centered">
-        The visualization of the clip-level weight-score regression method illustrates that our network can adhere to the same evaluative logic as human judges in real-world scenarios. The green curve representing weight delineates the significance of the respective action clip, whereas the orange curve for score quantifies the execution quality of the action, the overall score is shown by the blue curve. All scores are normalized to a range of 0 to 1 for easier comparison.
+        Activity frames illustrating the 5 phases for the action ’Putting something into something’. (red and blue bounding boxes indicate objects and light blue the hand)
       </h2>
     </div>
   </div>
@@ -150,7 +144,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Long-term Action Quality Assessment (AQA) evaluates the execution of activities in videos. However, the length presents challenges in fine-grained interpretability, with current AQA methods typically producing a single score by averaging clip features, lacking detailed semantic meanings of individual clips. Long-term videos pose additional difficulty due to the complexity and diversity of actions, exacerbating interpretability challenges. While query-based transformer networks offer promising long-term modelling capabilities, their interpretability in AQA remains unsatisfactory due to a phenomenon we term Temporal Skipping, where the model skips self-attention layers to prevent output degradation. To address this, we propose an attention loss function and a query initialization method to enhance performance and interpretability. Additionally, we introduce a weight-score regression module designed to approximate the scoring patterns observed in human judgments and replace conventional single-score regression, improving the rationality of interpretability. Our approach achieves state-of-the-art results on three real-world, long-term AQA benchmarks.
+            We investigate a human-like interpretable model of video understanding. Humans recognise complex activities in video by recognising critical spatio-temporal relations among explicitly recognised objects and parts, for example, an object entering the aperture of a container. To mimic this we build on a model which uses positions of objects and hands, and their motions, to recognise the activity taking place. To improve this model we focussed on three of the most confused classes (for this model) and identified that the lack of 3D information was the major problem. To address this we extended our basic model by adding 3D awareness in two ways: (1) A state-of-the-art object detection model was fine-tuned to determine the difference between “Container” and “NotContainer” in order to integrate object shape information into the existing object features. (2) A state-of-the-art depth estimation model was used to extract depth values for individual objects and calculate depth relations to expand the existing relations used our interpretable model. These 3D extensions to our basic model were evaluated on a subset of three superficially similar “Putting” actions from the Something-Something-v2 dataset. The results showed that the container detector did not improve performance, but the addition of depth relations made a significant improvement to performance.
           </p>
         </div>
       </div>
@@ -159,48 +153,10 @@
 </section>
 <!-- End paper abstract -->
 
-<!-- Model Image -->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="assets/IntrpretAQANetwork.png">
-      <h2 class="subtitle has-text-centered">
-        The overview architecture of our \networkName. The input video is divided into clips and fed into a backbone network. A temporal decoder models the clip-level features into temporal representations via learnable positionally encoded queries. The interpretable weight-score regression head can regress the final score by multiplying the weight and score of each clip. By minimizing the similarity between the self-attention map and cross-attention map, as well as query initialization, the problem of temporal collapse common in longer-term video sequences disappears and improves human interpretability.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- Model Image -->
-
-<!-- Temporal skipping Ex -->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="assets/IntrpretAQATemporalSkipping.png">
-      <h2 class="subtitle has-text-centered">
-        This figure shows the self-attention map (a) and (c) (ours) and visualization of segmented score of each clip (b) and (d) (ours). (a) and (b) represent the same action sequences, as do (c) and (d). We can observe that in (a), the self-attention map severely suffers from Temporal Skipping problem where (c) shows high correlations between queries
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- Temporal skipping Ex -->
-
-<!-- Rhythmic Gymnastics Ex -->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="assets/IntrpretAQARG_DatasetResults.png">
-      <h2 class="subtitle has-text-centered">
-        Visualization of our clip-level weight-score regression method on Rhythmic Gymnastics dataset.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- Rhythmic Gymnastics Ex -->
 
 
 <!-- Paper poster -->
-<!--
+
   <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
@@ -212,7 +168,6 @@
       </div>
     </div>
   </section>
-  -->
 <!--End paper poster -->
 
 
